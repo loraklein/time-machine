@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Machine Conversations</title>
+</head>
+<body>
+    <div class="header">
+        <h1>⏰ Time Machine Conversations</h1>
+        <p>Chat with historical figures from across time</p>
+    </div>
+    
+    <div class="character-selection">
+        <label for="characterSelect">Choose a historical figure:</label>
+        <select id="characterSelect">
+            <option value="">Select a character...</option>
+            <option value="einstein">Albert Einstein</option>
+            <option value="shakespeare">William Shakespeare</option>
+            <option value="napoleon">Napoleon Bonaparte</option>
+            <option value="cleopatra">Cleopatra</option>
+            <option value="lincoln">Abraham Lincoln</option>
+        </select>
+    </div>
+    
+    <div class="chat-container">
+        <div id="chatMessages" class="chat-messages">
+            <p><em>Select a historical figure to start your conversation...</em></p>
+        </div>
+        
+        <div class="input-area">
+            <input type="text" id="userInput" placeholder="Type your message..." disabled>
+            <button id="sendButton" disabled>Send</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
