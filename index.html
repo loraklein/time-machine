@@ -3,24 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Time Machine Conversations</title>
 </head>
 <body>
     <div class="header">
-        <h1>⏰ Time Machine Conversations</h1>
+        <h1><span class="clock-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </span> Time Machine Conversations</h1>
         <p>Chat with historical figures from across time</p>
     </div>
     
     <div class="character-selection">
         <label for="characterSelect">Choose a historical figure:</label>
         <select id="characterSelect">
-            <option value="">Select a character...</option>
-            <option value="einstein">Albert Einstein</option>
-            <option value="shakespeare">William Shakespeare</option>
-            <option value="napoleon">Napoleon Bonaparte</option>
-            <option value="cleopatra">Cleopatra</option>
-            <option value="lincoln">Abraham Lincoln</option>
-        </select>
+          <option value="">Select a character...</option>
+          <option value="shakespeare">William Shakespeare</option>
+          <option value="twain">Mark Twain</option>
+          <option value="einstein">Albert Einstein</option>
+      </select>
     </div>
     
     <div class="chat-container">
